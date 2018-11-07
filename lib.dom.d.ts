@@ -14855,7 +14855,7 @@ export interface URL {
     toJSON(): string;
 }
 
-export var URL: {
+export var URLConstructor: {
     prototype: URL;
     new(url: string, base?: string | URL): URL;
     createObjectURL(object: any): string;
