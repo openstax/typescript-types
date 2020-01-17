@@ -3503,7 +3503,7 @@ export interface DOMParser {
     parseFromString(str: string, type: SupportedType): Document;
 }
 
-export var DOMParser: {
+export var DOMParserConstructor: {
     prototype: DOMParser;
     new(): DOMParser;
 };
