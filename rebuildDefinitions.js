@@ -16,5 +16,6 @@ if (converted.search(/^export var URL: \{/gm) <= 0) {
 const converted2 = converted
     .replace(/^export var URL: \{/gm, 'export var URLConstructor: {')
     .replace(/^export var DOMParser: \{/gm, 'export var DOMParserConstructor: {')
+    .replace(/^export var KeyboardEvent: \{/gm, 'export var KeyboardEventConstructor: {')
 
 fs.writeFileSync(path.join(__dirname, 'lib.dom.d.ts'), converted2)

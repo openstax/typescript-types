@@ -9753,7 +9753,7 @@ export interface KeyboardEvent extends UIEvent {
     readonly DOM_KEY_LOCATION_STANDARD: number;
 }
 
-export var KeyboardEvent: {
+export var KeyboardEventConstructor: {
     prototype: KeyboardEvent;
     new(type: string, eventInitDict?: KeyboardEventInit): KeyboardEvent;
     readonly DOM_KEY_LOCATION_LEFT: number;
