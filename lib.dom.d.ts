@@ -12685,7 +12685,7 @@ export interface ResizeObserver {
     unobserve(target: Element): void;
 }
 
-export var ResizeObserver: {
+export var ResizeObserverConstructor: {
     prototype: ResizeObserver;
     new(callback: ResizeObserverCallback): ResizeObserver;
 };
